@@ -1,5 +1,8 @@
 import React from 'react';
 import "./Navbar.css";
+import { Link } from 'react-router-dom';
+import Sign_Up from '../Sign_Up/Sign_Up';
+import Login from '../Login/Login';
 
 function handleClick() {};
 
@@ -29,25 +32,26 @@ function Navbar() {
 
                 <ul className="nav__links active">
                 <li className="link">
-                    <a href="../Landing_Page/LandingPage.html">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="link">
                     <a href="#">Appointments</a>
                 </li>
                 <li className="link">
-                    <a href="../Sign_Up//Sign_Up.html">
+                    <Link to="/Sign_Up">
                     <button className="btn1">Sign Up</button>
-                    </a>
+                    </Link>
+                    
                 </li>
                 <li className="link">
-                    <a href="../Login/Login.html">
+                    <Link to="/Login">
                     <button className="btn1">Login</button>
-                    </a>
+                    </Link>
                 </li>
                 </ul>
             </nav>
         </div>
-    )
+    );
 }
 
 export default Navbar;
