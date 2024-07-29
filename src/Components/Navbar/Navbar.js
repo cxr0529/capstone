@@ -39,11 +39,11 @@ const Navbar = () => {
       setShowDropdown(!showDropdown);
     }
     useEffect(() => { 
-      const storedemail = sessionStorage.getItem("email");
+      const storedname = sessionStorage.getItem("name");
 
-      if (storedemail) {
+      if (storedname) {
             setIsLoggedIn(true);
-            setUsername(storedemail);
+            setUsername(storedname);
           }
         }, []);
   return (
