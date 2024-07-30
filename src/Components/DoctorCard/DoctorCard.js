@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import './DoctorCardIC.css';
+import './DoctorCard.css';
 import AppointmentForm from '../AppointmentForm/AppointmentForm.js'
 import { v4 as uuidv4 } from 'uuid';
 

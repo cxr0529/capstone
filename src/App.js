@@ -5,6 +5,7 @@ import Landing_Page from './Components/Landing_Page/LandingPage.js';
 import Sign_Up from './Components/Sign_Up/Sign_Up.js';
 import Login from './Components/Login/Login.js';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation.js';
+import BookingConsultation from './Components/BookingConsultation.js';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
         <BrowserRouter>
           <Navbar/>
           <Routes>
-            <Route path="/" element={<Landing_Page/>}/>
+            <Route path= "/" element={<Landing_Page/>}/>
             <Route path= "Sign_Up" element={<Sign_Up/>}/>
             <Route path= "Login" element={<Login/>}/>
-            <Route path='Instant' element={<InstantConsultation/>}/>
+            <Route path= "Instant" element={<InstantConsultation/>}/>
+            <Route path= "Booking" element={<BookingConsultation/>}/>
           </Routes>
         </BrowserRouter>
     </div>
