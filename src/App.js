@@ -6,12 +6,14 @@ import Sign_Up from './Components/Sign_Up/Sign_Up.js';
 import Login from './Components/Login/Login.js';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation.js';
 import BookingConsultation from './Components/BookingConsultation.js';
+import Notification from './Components/Notification/Notification.js';
 
 function App() {
   return (
     <div className="App">
         <BrowserRouter>
           <Navbar/>
+          <Notification>
           <Routes>
             <Route path= "/" element={<Landing_Page/>}/>
             <Route path= "Sign_Up" element={<Sign_Up/>}/>
@@ -19,6 +21,7 @@ function App() {
             <Route path= "Instant" element={<InstantConsultation/>}/>
             <Route path= "Booking" element={<BookingConsultation/>}/>
           </Routes>
+          </Notification>
         </BrowserRouter>
     </div>
   );
