@@ -7,6 +7,7 @@ import Login from './Components/Login/Login.js';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation.js';
 import BookingConsultation from './Components/BookingConsultation.js';
 import Notification from './Components/Notification/Notification.js';
+import ReviewForm from './Components/ReviewForm/ReviewForm.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path= "Login" element={<Login/>}/>
             <Route path= "Instant" element={<InstantConsultation/>}/>
             <Route path= "Booking" element={<BookingConsultation/>}/>
+            <Route path= "Review" element={<ReviewForm/>}/>
           </Routes>
           </Notification>
         </BrowserRouter>
