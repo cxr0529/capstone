@@ -54,7 +54,7 @@ const InstantConsultation = () => {
         getDoctorsDetails();
         // const authtoken = sessionStorage.getItem("auth-token");
         // if (!authtoken) {
-        //     navigate("/login");
+        //     navigate("/Login");
         // }
     }, [searchParams])
 
