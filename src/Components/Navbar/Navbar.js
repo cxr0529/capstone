@@ -54,7 +54,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className="nav__logo">
-                <Link to="/LandingPage">
+                <Link to="/">
                     StayHealthy <i style={{ color: '#2190FF' }} className="fa fa-user-md"></i></Link>
                 <span>.</span>
             </div>
@@ -63,19 +63,19 @@ const Navbar = () => {
             </div>
             <ul className={click ? 'nav__links active' : 'nav__links'}>
                 <li className="link">
-                    <Link to="/LandingPage">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="link">
-                    <Link to="/search/doctors">Appointments</Link>
+                    <Link to="/Booking">Appointments</Link>
+                </li>
+                {/* <li className="link"> */}
+                    {/* <Link to="/healthblog">Health Blog</Link> */}
+                {/* </li> */}
+                <li className="link">
+                    <Link to="/Instant">Instant Consultation</Link>
                 </li>
                 <li className="link">
-                    <Link to="/healthblog">Health Blog</Link>
-                </li>
-                <li className="link">
-                    <Link to="/instant-consultation">Instant Consultation</Link>
-                </li>
-                <li className="link">
-                    <Link to="/reviews">Reviews</Link>
+                    <Link to="/Reviews">Reviews</Link>
                 </li>
                 {isLoggedIn ? (
                     <>
