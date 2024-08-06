@@ -9,7 +9,7 @@ import BookingConsultation from './Components/BookingConsultation.js';
 import Notification from './Components/Notification/Notification.js';
 import ReviewForm from './Components/ReviewForm/ReviewForm.js';
 import ProfileCard from './Components/ProfileCard/ProfileCard.js';
-import Reportslayout from './Components/Reportslayout/ReportsLayout.js';
+import ReportsLayout from './Components/ReportsLayout/ReportsLayout.js';
 
 function App() {
   return (
